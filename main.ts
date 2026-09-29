@@ -33,25 +33,29 @@ function IntroConvert(InitialUnit: string, FinalUnit: string) {
   };
 }
 
-
+const kgButton = document.getElementById("kg-button") as HTMLButtonElement | null;
 const kgInput = document.getElementById("kg-input") as HTMLInputElement;
-const kgButton = document.getElementById("kg-button") as HTMLButtonElement;
 const kgResult = document.getElementById("kg-result") as HTMLParagraphElement;
+const poundsButton = document.getElementById("pounds-button") as HTMLButtonElement | null;
 const poundsInput = document.getElementById("pounds-input") as HTMLInputElement;
-const poundsButton = document.getElementById("pounds-button") as HTMLButtonElement;
 const poundsResult = document.getElementById("pounds-result") as HTMLParagraphElement;
+const milesButton = document.getElementById("miles-button") as HTMLButtonElement | null;
 const milesInput = document.getElementById("miles-input") as HTMLInputElement;
-const milesButton = document.getElementById("miles-button") as HTMLButtonElement;
 const milesResult = document.getElementById("miles-result") as HTMLParagraphElement;
+const kmButton = document.getElementById("km-button") as HTMLButtonElement | null;
 const kmInput = document.getElementById("km-input") as HTMLInputElement;
-const kmButton = document.getElementById("km-button") as HTMLButtonElement;
 const kmResult = document.getElementById("km-result") as HTMLParagraphElement;
+const celsiusButton = document.getElementById("celsius-button") as HTMLButtonElement | null;
 const celsiusInput = document.getElementById("celsius-input") as HTMLInputElement;
-const celsiusButton = document.getElementById("celsius-button") as HTMLButtonElement;
 const celsiusResult = document.getElementById("celsius-result") as HTMLParagraphElement;
+const fahrenheitButton = document.getElementById("fahrenheit-button") as HTMLButtonElement | null;
 const fahrenheitInput = document.getElementById("fahrenheit-input") as HTMLInputElement;
-const fahrenheitButton = document.getElementById("fahrenheit-button") as HTMLButtonElement;
 const fahrenheitResult = document.getElementById("fahrenheit-result") as HTMLParagraphElement;
+
+
+
+
+
 
 
 const handlePoundsConvert = (): void => {
@@ -126,9 +130,11 @@ const handleFahrenheitConvert = (): void => {
 };
 
 
-kgButton.addEventListener("click", handleKgConvert);
-poundsButton.addEventListener("click", handlePoundsConvert);
-milesButton.addEventListener("click", handleMilesConvert);
-kmButton.addEventListener("click", handleKmConvert);
-celsiusButton.addEventListener("click", handleCelsiusConvert);
-fahrenheitButton.addEventListener("click", handleFahrenheitConvert);
+kgButton?.addEventListener("click", handleKgConvert);
+poundsButton?.addEventListener("click", handlePoundsConvert);
+
+milesButton?.addEventListener("click", handleMilesConvert);
+kmButton?.addEventListener("click", handleKmConvert);
+
+celsiusButton?.addEventListener("click", handleCelsiusConvert);
+fahrenheitButton?.addEventListener("click", handleFahrenheitConvert);

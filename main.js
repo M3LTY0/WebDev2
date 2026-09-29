@@ -22,23 +22,23 @@ function IntroConvert(InitialUnit, FinalUnit) {
         return convertOne(item);
     };
 }
-const kgInput = document.getElementById("kg-input");
 const kgButton = document.getElementById("kg-button");
+const kgInput = document.getElementById("kg-input");
 const kgResult = document.getElementById("kg-result");
-const poundsInput = document.getElementById("pounds-input");
 const poundsButton = document.getElementById("pounds-button");
+const poundsInput = document.getElementById("pounds-input");
 const poundsResult = document.getElementById("pounds-result");
-const milesInput = document.getElementById("miles-input");
 const milesButton = document.getElementById("miles-button");
+const milesInput = document.getElementById("miles-input");
 const milesResult = document.getElementById("miles-result");
-const kmInput = document.getElementById("km-input");
 const kmButton = document.getElementById("km-button");
+const kmInput = document.getElementById("km-input");
 const kmResult = document.getElementById("km-result");
-const celsiusInput = document.getElementById("celsius-input");
 const celsiusButton = document.getElementById("celsius-button");
+const celsiusInput = document.getElementById("celsius-input");
 const celsiusResult = document.getElementById("celsius-result");
-const fahrenheitInput = document.getElementById("fahrenheit-input");
 const fahrenheitButton = document.getElementById("fahrenheit-button");
+const fahrenheitInput = document.getElementById("fahrenheit-input");
 const fahrenheitResult = document.getElementById("fahrenheit-result");
 const handlePoundsConvert = () => {
     const pounds = Number(poundsInput.value);
@@ -87,9 +87,9 @@ const handleFahrenheitConvert = () => {
     const celsius = converter(fahrenheit);
     fahrenheitResult.textContent = celsius.toFixed(2);
 };
-kgButton.addEventListener("click", handleKgConvert);
-poundsButton.addEventListener("click", handlePoundsConvert);
-milesButton.addEventListener("click", handleMilesConvert);
-kmButton.addEventListener("click", handleKmConvert);
-celsiusButton.addEventListener("click", handleCelsiusConvert);
-fahrenheitButton.addEventListener("click", handleFahrenheitConvert);
+kgButton?.addEventListener("click", handleKgConvert);
+poundsButton?.addEventListener("click", handlePoundsConvert);
+milesButton?.addEventListener("click", handleMilesConvert);
+kmButton?.addEventListener("click", handleKmConvert);
+celsiusButton?.addEventListener("click", handleCelsiusConvert);
+fahrenheitButton?.addEventListener("click", handleFahrenheitConvert);
